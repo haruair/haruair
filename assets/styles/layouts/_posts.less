@@ -1,6 +1,64 @@
+main {
+  header {
+    time {
+      color: @gray-light;
+      font-size: 0.7em;
+      text-transform: uppercase;
+    }
+    .byline {
+      height: 0;
+      overflow: hidden;
+    }
+    + .entry-content {
+      margin-top: 40px;
+    }
+  }
+}
+
+.entry-title {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  word-spacing: -0.05em;
+}
+
+.entry-headline {
+  color: @gray;
+  letter-spacing: -0.05em;
+  word-spacing: -0.05em;
+}
+
 .entry-content {
   img {
     max-width: 100%;
   }
   word-break: keep-all;
+  + footer {
+    margin-top: 40px;
+  }
+}
+
+.author-meta {
+  border: 1px solid @gray-lighter;
+  padding: 20px;
+  border-radius: 5px;
+  .clearfix;
+  .author-profile {
+    float: left;
+  }
+  .author-detail {
+    margin-left: @grid-gutter-width + @author-profile-size;
+    .author-name {
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+      font-size: 0.8em;
+    }
+  }
+  img {
+    max-width: @author-profile-size;
+    max-height: @author-profile-size;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+  }
 }

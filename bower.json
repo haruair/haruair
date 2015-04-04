@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "haruair",
+  "homepage": "http://haruair.com/",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Edward Kim <onward.edkim@gmail.com>"
   ],
   "license": "MIT",
   "private": true,

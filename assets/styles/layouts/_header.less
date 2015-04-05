@@ -1,10 +1,19 @@
+@media screen and (min-width:@screen-sm-min) {
+  .navbar-nav {
+    float: right;
+  }
+}
 @media screen and (min-width:@screen-md-min) {
   .navbar {
     margin-top: 40px;
     margin-bottom: 50px;
   }
-  .navbar-nav {
-    float: right;
+}
+
+@media screen and (min-width:@screen-sm-min) and (max-width:@screen-sm-max) {
+  .navbar {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -12,6 +21,11 @@
   .navbar-header {
     border-bottom: 3px dashed #ddd;
   }
+}
+
+.navbar {
+  font-weight: 900;
+  .tight-text;
 }
 
 .navbar-nav {
@@ -23,4 +37,11 @@
     left: auto;
     right: 0;
   }
+  > li:last-child > .dropdown-toggle {
+    padding-right: 0;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: @header-navbar-brand-color;
 }

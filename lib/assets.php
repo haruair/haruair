@@ -110,7 +110,7 @@ function assets() {
       'name' => 'jquery',
       'cdn' => 'google',
       'file' => 'jquery.min.js'
-    ], asset_path('scripts/jquery.js')), [], null, true);
+    ], asset_path('scripts/jquery.js')), [], null, false);
 
     add_filter('script_loader_src', __NAMESPACE__ . '\\jquery_local_fallback', 10, 2);
   }

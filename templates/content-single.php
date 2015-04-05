@@ -4,7 +4,7 @@
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php
       $headline = get_post_meta(get_the_ID(), 'headline', true);
-      if($headline !== ''):?>
+      if( $headline !== '' ): ?>
       <div class="entry-headline"><?php echo $headline;?></div>
       <?php endif;?>
       <?php get_template_part('templates/entry-meta'); ?>
@@ -15,7 +15,7 @@
     <footer>
       <div class="author-meta">
         <div class="author-profile">
-        <?php echo get_avatar( get_the_author_meta('user_email'), 192 );?>
+        <?php echo get_avatar(get_the_author_meta('user_email'), 192);?>
         </div>
         <div class="author-detail">
           <div class="author-name"><?php the_author_meta('display_name');?></div>

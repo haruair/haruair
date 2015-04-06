@@ -17,3 +17,58 @@
   &:extend(.btn all);
   &:extend(.btn-primary all);
 }
+
+.comments {
+  max-width: 600px;
+  margin: 50px auto;
+  font-size: 0.8em;
+  h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+    .tight-text;
+    margin-bottom: 20px;
+  }
+  .comment-meta {
+    margin-bottom: 5px;
+  }
+  .comment-metadata {
+    float: right;
+    margin-top: -27px;
+    font-size: 0.8em;
+    .edit-link:before {
+      content: "|";
+      margin: 0 5px 0 2px;
+      color: @gray-lighter;
+    }
+  }
+}
+
+.comment-list > li + li {
+  margin-top: 20px;
+}
+
+.comment-list ol {
+  margin: 15px 0 30px;
+  border-left: 3px solid @gray-lighter;
+}
+
+.pingback {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid @gray-lighter;
+}
+
+.comment-respond {
+  border-top: 3px dashed @gray-lighter;
+  margin-top: 60px;
+  font-size: 0.8em;
+  h3 {
+    font-size: 1.8em;
+    font-weight: 900;
+    .tight-text;
+    margin-bottom: 20px;
+  }
+  input[type=submit] {
+    font-size: 13px;
+  }
+}

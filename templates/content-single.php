@@ -2,11 +2,6 @@
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php
-      $headline = get_post_meta(get_the_ID(), 'headline', true);
-      if ($headline !== '') :?>
-      <div class="entry-headline"><?php echo $headline;?></div>
-      <?php endif;?>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-content">

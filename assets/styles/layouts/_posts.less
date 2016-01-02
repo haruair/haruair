@@ -1,9 +1,14 @@
 main {
   header {
-    time {
+    time, .words {
       color: @gray-light;
       font-size: 0.7em;
       text-transform: uppercase;
+    }
+    .words:before {
+      color: lighten(@gray-light, 30%);
+      content: "|";
+      margin-right: 0.5em;
     }
     .byline {
       height: 0;

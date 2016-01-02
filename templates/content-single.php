@@ -17,6 +17,10 @@
           <p><?php the_author_meta('description');?></p>
         </div>
       </div>
+      <div class="taxonomy">
+        <div class="category">Category : <?php the_category(', ', 'multiple');?></div>
+        <div class="tags"><?php the_tags();?></div>
+      </div>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
